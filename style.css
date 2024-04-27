@@ -1,0 +1,68 @@
+@font-face {
+    font-family:Intern;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+
+:root{
+    --cardcolor: #1f1f1f;
+    --address:#b6d43c;
+    --skillDefault:#333333;
+  
+}
+body{
+    font-family: Intern;
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.card{
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    background-color: var(--cardcolor);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    scale: 0.8;
+}
+.content{
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.card p:nth-child(2){
+    color: var(--address);
+    font-weight: 600;
+}
+.card ul li{
+    list-style: none;
+    font-weight: 800;
+    background-color: var(--skillDefault);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.card ul{
+    list-style: none;
+    padding: unset;
+}
+.card ul li:hover{
+    background-color: var(--address);
+    color: var(--cardcolor);
+    cursor: pointer;
+}
